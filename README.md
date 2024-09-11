@@ -12,11 +12,11 @@
 
 ### Tareas
 
-| Actividad        | Responsable    | Estado (-, en proceso, terminada) |
-| -------------    |:--------------:|:---------------------------------:|
-| Estudiar métodos | Alen Rupailaf  | En proceso                        |
-| Estudiar métodos | Mayra Carrillo | En proceso                        |
-| Estudiar métodos | Jonatan Agüero | En proceso                        |
-| Faltar           | Luciana Habert | Terminada                         |
-| Estudiar métodos | Cristóbal Veas | En proceso                        |
+| Actividad                                                         | Responsable           | Estado (-, en proceso, terminada) |
+| ----------------------------------------------------------------- |:---------------------:|:---------------------------------:|
+| Crear repositorio en GitHub del módulo API.                       | Luciana Habert        | Terminada                         |
+| Introducir tecnologías para construcción de API y bases de datos. | Benjamín Cifuentes    | Terminada                         |
+| Crear proyecto API usando Next.js.                                | Cristóbal Veas        | Terminada                         |
+| Implementar métodos de prueba en la API.                          | Por definir           | En proceso                        |
+| Implementación de tablas de base de datos temporal.               | Por definir           | En proceso                        |
 
