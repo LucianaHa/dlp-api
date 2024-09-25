@@ -35,7 +35,7 @@
 | prestado                   | boolean(f)    |
 
 
-### prestamo
+### Prestamo
 
 
 
