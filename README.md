@@ -20,3 +20,22 @@
 | Implementar métodos de prueba en la API.                          | Por definir           | En proceso                        |
 | Implementación de tablas de base de datos temporal.               | Por definir           | En proceso                        |
 
+### Libros
+
+
+| Campo                             | Tipo           |
+----------------------------------- |:---------------------:|
+| id                      | int      |
+|titulo                   | String   |
+| autores                 | String       |
+| tags                      | String        |
+| borrado                   | boolean(f)    |
+| donante                 | String        |
+| fecha_donacion               | date         |
+| prestado                   | boolean(f)    |
+
+
+
+
+
+
