@@ -35,6 +35,21 @@
 | prestado                   | boolean(f)    |
 
 
+### prestamo
+
+
+
+| Campo                             | Tipo           |
+----------------------------------- |:---------------------:|
+| id                      | int      |
+| id_libro                   | int   |
+| usuario                   s  | String       |
+| fecha_prestamo                 | date    |
+| fecha_limite                   | date   |
+| fecha_devuelto                 | date    |
+
+
+
 
 
 
