@@ -36,7 +36,7 @@
 
 ### libro.js
  
- 
+```json
 {  
     "libros":[
       {
@@ -62,7 +62,7 @@
       }
   ]
 }
-
+```
 
 ### Prestamo
 
