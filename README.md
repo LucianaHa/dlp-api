@@ -34,6 +34,35 @@
 | fecha_donacion               | date         |
 | prestado                   | boolean(f)    |
 
+### libro.js
+ 
+ 
+{  
+    "libros":[
+      {
+        "id": 1234,
+        "titulo": "El ingenioso hidalgo Don Quijote de la Mancha", 
+        "autores": "Miguel de Cervantes",
+        "tags": "aventura,sátira,parodia,ficcion humoristica",
+        "borrado": false,
+        "donante": "Maria Eliana de la Maza",
+        "fecha_donacion" : "2024-09-12 19:10:00",
+        "prestado" : false
+      },
+      {
+        "id": 4321,
+        "titulo": "El gato negro", 
+        "autores": "Edgar Allan Poe",
+        "tags": "terror, psicologico, ficcion gotica, clasico",
+        "borrado": false,
+        "donante": "Mayra Carrillo",
+        "fecha_donacion" : "2024-09-24 22:12:34",
+        "prestado" : true
+        
+      }
+  ]
+}
+
 
 ### Prestamo
 
@@ -47,6 +76,8 @@
 | fecha_prestamo                 | date    |
 | fecha_limite                   | date   |
 | fecha_devuelto                 | date    |
+
+
 
 
 
