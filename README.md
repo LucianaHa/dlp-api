@@ -20,7 +20,7 @@
 | Implementar métodos de prueba en la API.                          | Por definir           | En proceso                        |
 | Implementación de tablas de base de datos temporal.               | Por definir           | En proceso                        |
 
-### Libros
+### Libro
 
 
 | Campo                             | Tipo           |
