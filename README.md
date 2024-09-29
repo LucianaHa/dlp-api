@@ -72,7 +72,7 @@
 ----------------------------------- |:---------------------:|
 | id                      | int      |
 | id_libro                   | int   |
-| usuario                   s  | String       |
+| usuario                     | String       |
 | fecha_prestamo                 | date    |
 | fecha_limite                   | date   |
 | fecha_devuelto                 | date    |
