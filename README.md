@@ -53,7 +53,7 @@
         "id": 4321,
         "titulo": "El gato negro", 
         "autores": "Edgar Allan Poe",
-        "tags": "terror, psicologico, ficcion gotica, clasico",
+        "tags": "terror,psicologico,ficcion gotica,clasico",
         "borrado": false,
         "donante": "Mayra Carrillo",
         "fecha_donacion" : "2024-09-24 22:12:34",
