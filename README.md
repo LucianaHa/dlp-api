@@ -15,10 +15,14 @@
 | Actividad                                                         | Responsable           | Estado (-, en proceso, terminada) |
 | ----------------------------------------------------------------- |:---------------------:|:---------------------------------:|
 | Crear repositorio en GitHub del módulo API.                       | Luciana Habert        | Terminada                         |
-| Introducir tecnologías para construcción de API y bases de datos. | Benjamín Cifuentes    | Terminada                         |
+| Introducir tecnologías para construcción de API y bases de datos. | Cristóbal Veas        | Terminada                         |
 | Crear proyecto API usando Next.js.                                | Cristóbal Veas        | Terminada                         |
-| Implementar métodos de prueba en la API.                          | Por definir           | En proceso                        |
-| Implementación de tablas de base de datos temporal.               | Por definir           | En proceso                        |
+| Implementar ejemplos de retorno de los endpoints.                 | Jonatan Agüero        | En proceso                        |
+| Creación de query para creación de tablas en base de datos.       | Alen Rupailaf         | Terminada                         |
+| Implementación de base de datos en Vercel.                        | Luciana Habert        | Terminada                         |
+| Implementar métodos de prueba en la API.                          | Cristóbal Veas        | En proceso                        |
+| Añadir datos de prueba a tablas de la base de datos.              | Mayra Carrillo        | En proceso                        |
+| Implementación de endpoints.                                      | Por definir           | -                                 |
 
 ### Libro
 
