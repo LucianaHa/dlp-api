@@ -55,19 +55,12 @@
       }
 }
 ```
-# Especificación de base de datos
-Aca con las tablas como se especifican para postgres
-
 # Especificación de endpoints
 
-## Servicio libros
-[url-servidor]/libros
-
-## Parámetros
-id-libro: identificador del libro a obtener, si es nulo o vací devuelve todos los libros
-
-## Respuesta 
-libro.js
+|*Servicio*| [url-servidor]/libros (pedir un libro o todos los libros)|
+|----------------------------------- | --- |
+|*Parámetros*|id-libro: identificador del libro a obtener, si es nulo o vací devuelve todos los libros|
+|*Respuesta* |libro.js|
 ### Prestamo
 
 
