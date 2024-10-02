@@ -42,7 +42,7 @@
  
 ```json
 {  
-    "libros":[
+    "libros":
       {
         "id": 1234,
         "titulo": "El ingenioso hidalgo Don Quijote de la Mancha", 
@@ -52,22 +52,22 @@
         "donante": "Maria Eliana de la Maza",
         "fecha_donacion" : "2024-09-12 19:10:00",
         "prestado" : false
-      },
-      {
-        "id": 4321,
-        "titulo": "El gato negro", 
-        "autores": "Edgar Allan Poe",
-        "tags": "terror,psicologico,ficcion gotica,clasico",
-        "borrado": false,
-        "donante": "Mayra Carrillo",
-        "fecha_donacion" : "2024-09-24 22:12:34",
-        "prestado" : true
-        
       }
-  ]
 }
 ```
+# Especificación de base de datos
+Aca con las tablas como se especifican para postgres
 
+# Especificación de endpoints
+
+## Servicio libros
+[url-servidor]/libros
+
+## Parámetros
+id-libro: identificador del libro a obtener, si es nulo o vací devuelve todos los libros
+
+## Respuesta 
+libro.js
 ### Prestamo
 
 
