@@ -58,14 +58,14 @@
 {  
     "libros":
       {
-        "id": 1234,
-        "titulo": "El ingenioso hidalgo Don Quijote de la Mancha", 
-        "autores": "Miguel de Cervantes",
-        "tags": "aventura,sátira,parodia,ficcion humoristica",
-        "borrado": false,
-        "donante": "Maria Eliana de la Maza",
-        "fecha_donacion" : "2024-09-12 19:10:00",
-        "prestado" : false
+        "id": int,
+        "titulo": String, 
+        "autores": String,
+        "tags": [String],
+        "borrado": boolean,
+        "donante": String,
+        "fecha_donacion" : timestamp,
+        "prestado" : boolean
       }
 }
 ```
