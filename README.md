@@ -77,6 +77,7 @@
 | id                      | int      |
 | id_libro                   | int   |
 | usuario                     | String       |
+| borrado                   | boolean(f)    |
 | fecha_prestamo                 | date    |
 | fecha_limite                   | date   |
 | fecha_devuelto                 | date    |
