@@ -24,8 +24,9 @@
 | Añadir datos de prueba a tablas de la base de datos.              | Mayra Carrillo        | En proceso                        |
 | Implementación de endpoints.                                      | Por definir           | -                                 |
 
-### Libro
+### Especificación de tablas de base de datos
 
+#### Libro
 
 | Campo                             | Tipo           |
 ----------------------------------- |:---------------------:|
@@ -33,57 +34,26 @@
 |titulo                   | VARCHAR   |
 | autores                 | VARCHAR[]       |
 | tags                      | VARCHAR[]        |
-| borrado                   | boolean(f)    |
 | donante                 | VARCHAR        |
 | fecha_donacion               | TIMESTAMP         |
-| prestado                   | boolean(f)    |
+| prestado                   | BOOL(f)    |
+| borrado                   | BOOL(f)    |
 
-
-### Prestamo
-
-
+#### Prestamo
 
 | Campo                             | Tipo           |
 ----------------------------------- |:---------------------:|
 | id                      | INT      |
 | id_libro                   | INT   |
 | usuario                     | VARCHAR       |
-| borrado                   | boolean(f)    |
 | fecha_prestamo                 | TIMESTAMP    |
 | fecha_limite                   | TIMESTAMP   |
 | fecha_devuelto                 | TIMESTAMP    |
-### libro.js
- 
-```json
-{  
-    "libros":
-      {
-        "id": int,
-        "titulo": String, 
-        "autores": String,
-        "tags": [String],
-        "borrado": boolean,
-        "donante": String,
-        "fecha_donacion" : timestamp,
-        "prestado" : boolean
-      }
-}
-```
+| borrado                   | BOOL(f)    |
+
 ### Especificación de endpoints
 
-Ejemplo endpoint para pedir un libro o todos los libros:
-
-|**Servicio**| [url-servidor]/libros |
+|**Servicio**| <url-servidor>/libros?id=[id] |
 |----------------------------------- | --- |
-|**Parámetros**|id-libro: identificador del libro a obtener, si es nulo o vacío devuelve todos los libros|
-|**Respuesta**|     {<br>&nbsp;  "id": 1234,<br>&nbsp;&nbsp; "titulo": "El ingenioso hidalgo Don Quijote de la Mancha", <br>&nbsp;&nbsp;  "autores": "Miguel de Cervantes",<br>&nbsp;&nbsp;  "tags": "aventura,sátira,parodia,ficcion humoristica",<br>&nbsp;&nbsp;  "borrado": false,<br>&nbsp;&nbsp;  "donante": "Maria Eliana de la Maza",<br>&nbsp;&nbsp;  "fecha_donacion" : "2024-09-12 19:10:00",<br>&nbsp;&nbsp;  "prestado" : false<br>  }|
-
-
-
-
-
-
-
-
-
-
+|**Parámetros**| id: identificador del libro a obtener, si no se especifica devuelve todos los libros |
+|**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"libros": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 5,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"titulo": "Moby Dick",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"autores": [<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Herman Melville"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tags": [<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"aventura",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"épica",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"clásico"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"donante": "Mayra Carrillo",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha_donacion": "2021-07-07T16:20:00.000Z",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"prestado": false,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"borrado": false<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}|
