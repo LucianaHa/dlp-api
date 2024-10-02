@@ -59,10 +59,10 @@
 
 Ejemplo endpoint para pedir un libro o todos los libros:
 
-|*Servicio*| [url-servidor]/libros |
+|**Servicio**| [url-servidor]/libros |
 |----------------------------------- | --- |
-|*Parámetros*|id-libro: identificador del libro a obtener, si es nulo o vací devuelve todos los libros|
-|*Respuesta* |      {<br>&nbsp;  "id": 1234,<br>&nbsp;&nbsp; "titulo": "El ingenioso hidalgo Don Quijote de la Mancha", <br>&nbsp;&nbsp;  "autores": "Miguel de Cervantes",<br>&nbsp;&nbsp;  "tags": "aventura,sátira,parodia,ficcion humoristica",<br>&nbsp;&nbsp;  "borrado": false,<br>&nbsp;&nbsp;  "donante": "Maria Eliana de la Maza",<br>&nbsp;&nbsp;  "fecha_donacion" : "2024-09-12 19:10:00",<br>&nbsp;&nbsp;  "prestado" : false<br>  }|
+|**Parámetros**|id-libro: identificador del libro a obtener, si es nulo o vací devuelve todos los libros|
+|**Respuesta**|     {<br>&nbsp;  "id": 1234,<br>&nbsp;&nbsp; "titulo": "El ingenioso hidalgo Don Quijote de la Mancha", <br>&nbsp;&nbsp;  "autores": "Miguel de Cervantes",<br>&nbsp;&nbsp;  "tags": "aventura,sátira,parodia,ficcion humoristica",<br>&nbsp;&nbsp;  "borrado": false,<br>&nbsp;&nbsp;  "donante": "Maria Eliana de la Maza",<br>&nbsp;&nbsp;  "fecha_donacion" : "2024-09-12 19:10:00",<br>&nbsp;&nbsp;  "prestado" : false<br>  }|
 ### Prestamo
 
 
