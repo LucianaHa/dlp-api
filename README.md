@@ -29,13 +29,13 @@
 
 | Campo                             | Tipo           |
 ----------------------------------- |:---------------------:|
-| id                      | int      |
-|titulo                   | String   |
-| autores                 | String       |
-| tags                      | String        |
+| id                      | INT      |
+|titulo                   | VARCHAR   |
+| autores                 | VARCHAR[]       |
+| tags                      | VARCHAR[]        |
 | borrado                   | boolean(f)    |
-| donante                 | String        |
-| fecha_donacion               | date         |
+| donante                 | VARCHAR        |
+| fecha_donacion               | TIMESTAMP         |
 | prestado                   | boolean(f)    |
 
 
@@ -45,13 +45,13 @@
 
 | Campo                             | Tipo           |
 ----------------------------------- |:---------------------:|
-| id                      | int      |
-| id_libro                   | int   |
-| usuario                     | String       |
+| id                      | INT      |
+| id_libro                   | INT   |
+| usuario                     | VARCHAR       |
 | borrado                   | boolean(f)    |
-| fecha_prestamo                 | date    |
-| fecha_limite                   | date   |
-| fecha_devuelto                 | date    |
+| fecha_prestamo                 | TIMESTAMP    |
+| fecha_limite                   | TIMESTAMP   |
+| fecha_devuelto                 | TIMESTAMP    |
 ### libro.js
  
 ```json
