@@ -55,7 +55,7 @@ export async function GET(request) {
             });
         }
 
-        return new Response(JSON.stringify({ libro: rows[0] }), {
+        return new Response(JSON.stringify({ libros: rows }), {
             status: 200,
             headers: { 'Content-Type': 'application/json' },
         });
