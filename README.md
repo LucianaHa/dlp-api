@@ -10,6 +10,11 @@
 ### Descripción
 > El módulo API es una aplicación de back-end conectada a una base de datos de libros y préstamos que provee una serie de endpoints que cubren todas las necesidades de datos de los distintos módulos del sistema, incluyendo las operaciones CRUD para libros, donaciones y préstamos.
 
+### Observaciones
+#### Sprint 1
+- Los usuarios deben ser manejados mediante su correo, no con su nombre para extender las posibilidades a futuro de implementar un sistema de autenticación.
+- Autores deben ser representados como un VARCHAR normal, no como arreglo, debido a que el tenerlos como arreglo dificulta su manipulación y no se necesita por el momento.
+
 ### Tareas
 
 | Actividad                                                         | Responsable           | Estado (-, en proceso, terminada) |
