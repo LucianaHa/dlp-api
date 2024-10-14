@@ -37,7 +37,7 @@
 ----------------------------------- |:---------------------:|
 | id                      | INT      |
 |titulo                   | VARCHAR   |
-| autores                 | VARCHAR[]       |
+| autores                 | VARCHAR       |
 | tags                      | VARCHAR[]        |
 | donante                 | VARCHAR        |
 | fecha_donacion               | TIMESTAMP         |
