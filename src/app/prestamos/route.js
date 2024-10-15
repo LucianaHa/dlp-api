@@ -25,7 +25,7 @@ export async function GET(request) {
         });
         } catch (e) {
             console.log(e);
-            return new Response(JSON.stringify({ error: "Error al obtener prestamos." }), {
+            return new Response(JSON.stringify({ error: "Error al obtener préstamos." }), {
                 status: 500,
                 headers: { 'Content-Type': 'application/json' },
             });
@@ -47,7 +47,7 @@ export async function GET(request) {
         `;
 
         if (rows.length === 0) {
-            return new Response(JSON.stringify({ error: "Préstamo no encontrado." }), {
+            return new Response(JSON.stringify({ error: "No se encontraron préstamos del libro." }), {
                 status: 404,
                 headers: { 'Content-Type': 'application/json' },
             });
@@ -59,16 +59,9 @@ export async function GET(request) {
         });
     } catch (e) {
         console.log(e);
-        return new Response(JSON.stringify({ error: "Error al obtener el préstamo." }), {
+        return new Response(JSON.stringify({ error: "Error al obtener préstamos." }), {
             status: 500,
             headers: { 'Content-Type': 'application/json' },
         });
     }
-}
-
-export async function POST(request) {
-    return new Response(JSON.stringify({ error: "AAAAAAAAAAAAAAA." }), {
-        status: 200,
-        headers: { 'Content-Type': 'application/json' },
-    });
 }
