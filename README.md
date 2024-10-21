@@ -56,7 +56,7 @@
 | fecha_devuelto                 | TIMESTAMP    |
 | borrado                   | BOOL(f)    |
 
-### Especificación de endpoints
+### Especificación de endpoints (GET)
 
 |**Servicio**| \<url-servidor\>/libros?id=[id] |
 |----------------------------------- | --- |
@@ -67,4 +67,14 @@
 |----------------------------------- | --- |
 |**Parámetros**| id_libro: identificador del libro del cual se quiere saber su historial de préstamos, si no se especifica devuelve todos los préstamos realizados |
 |**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"prestamos": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 6,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id_libro": 4,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"usuario": "cristobal.veas@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha_prestamo": "2022-08-05T17:20:00.000Z",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha_limite": "2022-08-19T17:20:00.000Z",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha_devuelto": "2022-08-18T15:30:00.000Z",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"borrado": false<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}
+
+### Especificación de endpoints (POST)
+|**Servicio**| \<url-servidor\>/donar| 
+|----------------------------------- | --- |
+|**Body** | {<br>&nbsp;&nbsp;"titulo": "Moby Dick",<br>&nbsp;&nbsp;"autores": "Herman Melville",<br>&nbsp;&nbsp;"tags": [<br>&nbsp;&nbsp;&nbsp;&nbsp;"tipo:Manga",<br>&nbsp;&nbsp;&nbsp;&nbsp;"aventura",<br>&nbsp;&nbsp;&nbsp;&nbsp;"épica",<br>&nbsp;&nbsp;&nbsp;&nbsp;"clásico"<br>&nbsp;&nbsp;],<br>&nbsp;&nbsp;"donante": "mayra.carrillo@alumnos.uach.cl"<br>} |
+|**Ejemplo respuesta**|{<br>&nbsp;&nbsp;"id": 5<br>} |
+
+
+
+
 
