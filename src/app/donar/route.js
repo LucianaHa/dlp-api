@@ -1,7 +1,9 @@
 import { sql } from '@vercel/postgres';
+import { NextRequest } from 'next/server';
 
 export async function POST(request) {
-    const libro = request.body;
+    const libro = await request.json();
+
     try {
         const { rows } = await sql`
         INSERT INTO libro 
@@ -23,7 +25,7 @@ export async function POST(request) {
         RETURNING id;
         `;
 
-        return new Response(JSON.stringify({ id: rows }), {
+        return new Response(JSON.stringify(rows), {
             status: 200,
             headers: { 'Content-Type': 'application/json' }
         });
