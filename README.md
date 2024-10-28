@@ -56,6 +56,15 @@
 | fecha_devuelto                 | TIMESTAMP    |
 | borrado                   | BOOL(f)    |
 
+#### Registro
+
+| Campo                             | Tipo           |
+----------------------------------- |:---------------------:|
+| id                      | INT      |
+| usuario                     | VARCHAR       |
+| fecha                | TIMESTAMP    |
+| metadatos                   | VARCHAR    |
+
 ### Especificación de endpoints (GET)
 
 |**Servicio**| \<url-servidor\>/libros?id=[id] |
