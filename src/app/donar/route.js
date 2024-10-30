@@ -1,5 +1,4 @@
 import { sql } from '@vercel/postgres';
-import { NextRequest } from 'next/server';
 
 export async function POST(request) {
     const libro = await request.json();
