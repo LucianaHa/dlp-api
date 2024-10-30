@@ -60,3 +60,38 @@ export async function GET(request) {
         });
     }
 }
+
+export async function POST(request) {
+    const registro = await request.json();
+
+    try {
+        const { rows } = await sql`
+        INSERT INTO registro 
+                (
+                usuario, 
+                fecha,
+                accion,
+                metadatos
+                )
+            VALUES 
+                (
+                ${registro.usuario}, 
+                NOW()::timestamp,  
+                ${registro.accion}, 
+                ${registro.metadatos}
+                ) 
+        RETURNING id;
+        `;
+
+        return new Response(JSON.stringify(rows), {
+            status: 200,
+            headers: { 'Content-Type': 'application/json' }
+        });
+    } catch (e) {
+        console.log(e);
+        return new Response(JSON.stringify({error: "Error al insertar registros."}), {
+            status: 500,
+            headers: { 'Content-Type': 'application/json' }
+        });
+    }
+}
