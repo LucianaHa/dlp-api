@@ -8,7 +8,9 @@ export async function POST(request) {
         INSERT INTO libro 
                 (
                 titulo, 
-                autores, 
+                autores,
+                caratula,
+                isbn,
                 tags, 
                 fecha_donacion, 
                 donante

@@ -10,7 +10,9 @@ export async function GET(request) {
             SELECT 
                 id, 
                 titulo, 
-                autores, 
+                autores,
+                caratula,
+                isbn,
                 tags, 
                 donante, 
                 fecha_donacion, 
@@ -38,7 +40,9 @@ export async function GET(request) {
             SELECT 
                 id, 
                 titulo, 
-                autores, 
+                autores,
+                caratula,
+                isbn,
                 tags, 
                 donante, 
                 fecha_donacion, 
