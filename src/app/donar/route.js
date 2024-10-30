@@ -32,7 +32,7 @@ export async function POST(request) {
         });
     } catch (e) {
         console.log(e);
-        return new Response(JSON.stringify({error: "Error al insertar libros."}), {
+        return new Response(JSON.stringify({ error: "Error al insertar libro." }), {
             status: 500,
             headers: { 'Content-Type': 'application/json' }
         });

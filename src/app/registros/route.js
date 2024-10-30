@@ -89,7 +89,7 @@ export async function POST(request) {
         });
     } catch (e) {
         console.log(e);
-        return new Response(JSON.stringify({error: "Error al insertar registros."}), {
+        return new Response(JSON.stringify({ error: "Error al insertar registros." }), {
             status: 500,
             headers: { 'Content-Type': 'application/json' }
         });
