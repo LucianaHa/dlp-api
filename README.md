@@ -83,7 +83,7 @@
 |**Servicio**| \<url-servidor\>/registros?id=[id] |
 |----------------------------------- | --- |
 |**Parámetros**| id: identificador del registro a obtener, si no se especifica devuelve todos los registros |
-|**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"registros": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 5,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"usuario": "admin",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha": "2022-08-18T15:30:00.000Z",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"accion": "MODIFICAR_LIBRO",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"metadatos": "CAMBIAR_TITULO: { 'titulo_anterior': 'Moby Dcki'; 'titulo_nuevo': 'Moby Dick' }"<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}
+|**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"registros": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 1,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"usuario": "admin",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha": "2022-08-18T15:30:00.000Z",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"accion": "MODIFICAR_LIBRO",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"metadatos": "CAMBIAR_TITULO: { 'titulo_anterior': 'Moby Dcki'; 'titulo_nuevo': 'Moby Dick' }"<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}
 
 ### Especificación de endpoints (POST)
 |**Servicio**| \<url-servidor\>/donar| 
@@ -91,7 +91,7 @@
 |**Body** | {<br>&nbsp;&nbsp;"titulo": "Moby Dick",<br>&nbsp;&nbsp;"autores": "Herman Melville",<br>&nbsp;&nbsp;"tags": [<br>&nbsp;&nbsp;&nbsp;&nbsp;"aventura",<br>&nbsp;&nbsp;&nbsp;&nbsp;"épica",<br>&nbsp;&nbsp;&nbsp;&nbsp;"clásico"<br>&nbsp;&nbsp;],<br>&nbsp;&nbsp;"donante": "mayra.carrillo@alumnos.uach.cl"<br>} |
 |**Ejemplo respuesta**|{<br>&nbsp;&nbsp;"id": 5<br>} |
 
-
-
-
-
+|**Servicio**| \<url-servidor\>/registros| 
+|----------------------------------- | --- |
+|**Body** | {<br>&nbsp;&nbsp;"usuario": "mayra.carrillo@alumnos.uach.cl",<br>&nbsp;&nbsp;"accion": "MODIFICAR_LIBRO",<br>&nbsp;&nbsp;"metadatos": "CAMBIAR_TITULO: { 'titulo_anterior': 'Moby Dcki'; 'titulo_nuevo': 'Moby Dick' }"<br>}|
+|**Ejemplo respuesta**|{<br>&nbsp;&nbsp;"id": 1<br>} |
