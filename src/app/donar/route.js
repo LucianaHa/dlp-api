@@ -8,7 +8,9 @@ export async function POST(request) {
         INSERT INTO libro 
                 (
                 titulo, 
-                autores, 
+                autores,
+                caratula,
+                isbn,
                 tags, 
                 fecha_donacion, 
                 donante
@@ -16,7 +18,9 @@ export async function POST(request) {
             VALUES 
                 (
                 ${libro.titulo}, 
-                ${libro.autores}, 
+                ${libro.autores},
+                ${libro.caratula},
+                ${libro.isbn},
                 ${libro.tags}, 
                 NOW()::timestamp, 
                 ${libro.donante}
