@@ -33,40 +33,40 @@
 
 #### Libro
 
-| Campo                             | Tipo           |
+| Campo                             | Tipo                  |
 ----------------------------------- |:---------------------:|
-| id                      | INT      |
-|titulo                   | VARCHAR   |
-| autores                 | VARCHAR       |
-| caratula                | VARCHAR        |
-| isbn | VARCHAR | 
-| tags                      | VARCHAR[]        |
-| donante                 | VARCHAR        |
-| fecha_donacion               | TIMESTAMP         |
-| prestado                   | BOOL(f)    |
-| borrado                   | BOOL(f)    |
+| id                                | INT                   |
+|titulo                             | VARCHAR               |
+| autores                           | VARCHAR               |
+| caratula                          | VARCHAR               |
+| isbn                              | VARCHAR               | 
+| tags                              | VARCHAR[]             |
+| donante                           | VARCHAR               |
+| fecha_donacion                    | TIMESTAMP             |
+| prestado                          | BOOL(f)               |
+| borrado                           | BOOL(f)               |
 
 #### Prestamo
 
-| Campo                             | Tipo           |
+| Campo                             | Tipo                  |
 ----------------------------------- |:---------------------:|
-| id                      | INT      |
-| id_libro                   | INT   |
-| usuario                     | VARCHAR       |
-| fecha_prestamo                 | TIMESTAMP    |
-| fecha_limite                   | TIMESTAMP   |
-| fecha_devuelto                 | TIMESTAMP    |
-| borrado                   | BOOL(f)    |
+| id                                | INT                   |
+| id_libro                          | INT                   |
+| usuario                           | VARCHAR               |
+| fecha_prestamo                    | TIMESTAMP             |
+| fecha_limite                      | TIMESTAMP             |
+| fecha_devuelto                    | TIMESTAMP             |
+| borrado                           | BOOL(f)               |
 
 #### Registro
 
-| Campo                             | Tipo           |
+| Campo                             | Tipo                  |
 ----------------------------------- |:---------------------:|
-| id                      | INT      |
-| usuario                     | VARCHAR       |
-| fecha                | TIMESTAMP    |
-| metadatos                   | VARCHAR    |
-| accion                   | VARCHAR    |
+| id                                | INT                   |
+| usuario                           | VARCHAR               |
+| fecha                             | TIMESTAMP             |
+| accion                            | VARCHAR               |
+| metadatos                         | VARCHAR               |
 
 ### Especificación de endpoints (GET)
 
