@@ -38,6 +38,8 @@
 | id                      | INT      |
 |titulo                   | VARCHAR   |
 | autores                 | VARCHAR       |
+| caratula                | VARCHAR        |
+| isbn | VARCHAR | 
 | tags                      | VARCHAR[]        |
 | donante                 | VARCHAR        |
 | fecha_donacion               | TIMESTAMP         |
