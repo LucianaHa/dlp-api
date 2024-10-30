@@ -12,7 +12,7 @@ export async function GET(request) {
                 usuario,
                 fecha,
                 metadatos,
-                accion, 
+                accion 
             FROM registro;
         `;
 
@@ -36,7 +36,7 @@ export async function GET(request) {
                 usuario,
                 fecha,
                 metadatos,
-                accion, 
+                accion
             FROM registro
             WHERE id = ${id};
         `;
