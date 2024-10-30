@@ -64,6 +64,7 @@
 | usuario                     | VARCHAR       |
 | fecha                | TIMESTAMP    |
 | metadatos                   | VARCHAR    |
+| accion                   | VARCHAR    |
 
 ### Especificación de endpoints (GET)
 
