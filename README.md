@@ -80,7 +80,7 @@ los distintos módulos del proyecto.
 |**Servicio**| \<url-servidor\>/libros?id=[id] |
 |----------------------------------- | --- |
 |**Parámetros**| id: identificador del libro a obtener, si no se especifica devuelve todos los libros |
-|**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"libros": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 5,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"titulo": "Moby Dick",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"autores": "Herman Melville",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tags": [<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"aventura",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"épica",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"clásico"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"donante": "mayra.carrillo@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha_donacion": "2021-07-07T16:20:00.000Z",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"prestado": false,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"borrado": false<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}|
+|**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"libros": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 5,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"titulo": "Moby Dick",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"autores": "Herman Melville",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"caratula": "...",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"isbn": "9788491054290,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tags": [<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"aventura",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"épica",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"clásico"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"donante": "mayra.carrillo@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha_donacion": "2021-07-07T16:20:00.000Z",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"prestado": false,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"borrado": false<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}|
 
 |**Servicio**| \<url-servidor\>/prestamos?id_libro=[id_libro] |
 |----------------------------------- | --- |
@@ -95,7 +95,7 @@ los distintos módulos del proyecto.
 ### Especificación de endpoints (POST)
 |**Servicio**| \<url-servidor\>/donar| 
 |----------------------------------- | --- |
-|**Body** | {<br>&nbsp;&nbsp;"titulo": "Moby Dick",<br>&nbsp;&nbsp;"autores": "Herman Melville",<br>&nbsp;&nbsp;"tags": [<br>&nbsp;&nbsp;&nbsp;&nbsp;"aventura",<br>&nbsp;&nbsp;&nbsp;&nbsp;"épica",<br>&nbsp;&nbsp;&nbsp;&nbsp;"clásico"<br>&nbsp;&nbsp;],<br>&nbsp;&nbsp;"donante": "mayra.carrillo@alumnos.uach.cl"<br>} |
+|**Body** | {<br>&nbsp;&nbsp;"titulo": "Moby Dick",<br>&nbsp;&nbsp;"autores": "Herman Melville",<br>&nbsp;&nbsp;"caratula": "...",<br>&nbsp;&nbsp;"isbn": "9788491054290",<br>&nbsp;&nbsp;"tags": [<br>&nbsp;&nbsp;&nbsp;&nbsp;"aventura",<br>&nbsp;&nbsp;&nbsp;&nbsp;"épica",<br>&nbsp;&nbsp;&nbsp;&nbsp;"clásico"<br>&nbsp;&nbsp;],<br>&nbsp;&nbsp;"donante": "mayra.carrillo@alumnos.uach.cl"<br>} |
 |**Ejemplo respuesta**|{<br>&nbsp;&nbsp;"id": 5<br>} |
 
 |**Servicio**| \<url-servidor\>/registros| 
