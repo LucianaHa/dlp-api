@@ -18,7 +18,9 @@ export async function POST(request) {
             VALUES 
                 (
                 ${libro.titulo}, 
-                ${libro.autores}, 
+                ${libro.autores},
+                ${libro.caratula},
+                ${libro.isbn},
                 ${libro.tags}, 
                 NOW()::timestamp, 
                 ${libro.donante}
