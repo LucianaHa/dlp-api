@@ -31,10 +31,29 @@ los distintos módulos del proyecto.
 | Crear proyecto API usando Next.js.                                | Cristóbal Veas        | Terminada                         |
 | Implementar ejemplos de retorno de los endpoints.                 | Jonatan Agüero        | Terminada                         |
 | Creación de query para creación de tablas en base de datos.       | Alen Rupailaf         | Terminada                         |
-| Implementación de base de datos en Vercel.                        | Luciana Habert        | Terminada                         |
+| Creación de base de datos en Vercel.                              | Luciana Habert        | Terminada                         |
 | Implementar métodos de prueba en la API.                          | Cristóbal Veas        | Terminada                         |
+| Creación de tablas en base de datos.                              | Cristóbal Veas        | Terminada                         |
 | Añadir datos de prueba a tablas de la base de datos.              | Mayra Carrillo        | Terminada                         |
-| Implementación de endpoints.                                      | Por definir           | -                                 |
+| Implementación de endpoint GET "libros"                           | Cristóbal Veas        | Terminada                         |
+| Añadir especificación de endpoint GET "libros"                    | Jonatan Agüero        | Terminada                         |
+| Implementación de endpoint GET "prestamos"                        | Cristóbal Veas        | Terminada                         |
+| Añadir especificación de endpoint POST "donar"                    | Mayra Carrillo        | Terminada                         |
+| Implementación de endpoint POST "donar"                           | Alen Rupailaf         | Terminada                         |
+| Añadir especificación tabla "registro"                            | Mayra Carrillo        | Terminada                         |
+| Implementación endpoint GET "registros"                           | Luciana Habert        | Terminada                         |
+| Añadir especificación endpoint POST "registros"                   | Cristóbal Veas        | Terminada                         |
+| Implementación endpoint POST "registros"                          | Alen Rupailaf         | Terminada                         |
+| Añadir especificación endpoint POST "prestamoDevolucion"          | -                     | -                                 |
+| Implementación endpoint POST "prestamoDevolucion"                 | Cristóbal Veas        | En proceso                        |
+| Añadir especificación endpoint GET "librosMasSolicitados"         | -                     | -                                 |
+| Implementación endpoint GET "librosMasSolicitados"                | -                     | -                                 |
+| Añadir especificación endpoint GET "librosPendientes"             | -                     | -                                 |
+| Implementación endpoint GET "librosPendientes"                    | -                     | -                                 |
+| Añadir especificación endpoint GET "resumenAnual"                 | -                     | -                                 |
+| Implementación endpoint GET "resumenAnual"                        | -                     | -                                 |
+| Añadir especificación endpoint GET "estadisticas"                 | -                     | -                                 |
+| Implementación endpoint GET "estadisticas"                        | -                     | -                                 |
 
 ### Especificación de tablas de base de datos
 
@@ -43,7 +62,7 @@ los distintos módulos del proyecto.
 | Campo                             | Tipo                  |
 ----------------------------------- |:---------------------:|
 | id                                | INT                   |
-|titulo                             | VARCHAR               |
+| titulo                            | VARCHAR               |
 | autores                           | VARCHAR               |
 | caratula                          | VARCHAR               |
 | isbn                              | VARCHAR               | 
