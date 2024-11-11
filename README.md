@@ -46,8 +46,8 @@ los distintos módulos del proyecto.
 | Implementación endpoint POST "registros"                          | Alen Rupailaf         | Terminada                         |
 | Añadir especificación endpoint POST "prestamoDevolucion"          | Cristóbal Veas        | -                                 |
 | Implementación endpoint POST "prestamoDevolucion"                 | Cristóbal Veas        | En proceso                        |
-| Añadir especificación endpoint GET "librosMasSolicitados"         | -                     | -                                 |
-| Implementación endpoint GET "librosMasSolicitados"                | -                     | -                                 |
+| Añadir especificación endpoint GET "librosMasSolicitados"         | Alen Rupailaf         | -                                 |
+| Implementación endpoint GET "librosMasSolicitados"                | Alen Rupailaf         | -                                 |
 | Añadir especificación endpoint GET "librosPendientes"             | Mayra Carrillo        | -                                 |
 | Implementación endpoint GET "librosPendientes"                    | Mayra Carrillo        | -                                 |
 | Añadir especificación endpoint GET "resumenAnual"                 | -                     | -                                 |
