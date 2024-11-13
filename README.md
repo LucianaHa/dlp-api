@@ -52,8 +52,8 @@ los distintos módulos del proyecto.
 | Implementación endpoint GET "librosPendientes"                    | Mayra Carrillo        | -                                 |
 | Añadir especificación endpoint GET "resumenAnual"                 | -                     | -                                 |
 | Implementación endpoint GET "resumenAnual"                        | -                     | -                                 |
-| Añadir especificación endpoint GET "estadisticas"                 | -                     | -                                 |
-| Implementación endpoint GET "estadisticas"                        | -                     | -                                 |
+| Añadir especificación endpoint GET "estadisticas"                 | Jonatan Agüero        | En proceso                        |
+| Implementación endpoint GET "estadisticas"                        | Jonatan Agüero        | En proceso                        |
 
 ### Especificación de tablas de base de datos
 
