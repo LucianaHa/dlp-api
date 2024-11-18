@@ -48,10 +48,10 @@ los distintos módulos del proyecto.
 | Implementación endpoint POST "prestamoDevolucion"                 | Cristóbal Veas        | Terminada                         |
 | Añadir especificación endpoint GET "librosMasSolicitados"         | Alen Rupailaf         | -                                 |
 | Implementación endpoint GET "librosMasSolicitados"                | Alen Rupailaf         | -                                 |
-| Añadir especificación endpoint GET "librosPendientes"             | Mayra Carrillo        | -                                 |
-| Implementación endpoint GET "librosPendientes"                    | Mayra Carrillo        | En proceso                        |
-| Añadir especificación endpoint GET "resumenAnual"                 | Luciana Habert        | En proceso                                 |
-| Implementación endpoint GET "resumenAnual"                        | Luciana Habert        | En proceso                                 |
+| Añadir especificación endpoint GET "librosPendientes"             | Mayra Carrillo        | En proceso                        |
+| Implementación endpoint GET "librosPendientes"                    | Mayra Carrillo        | Terminada                         |
+| Añadir especificación endpoint GET "resumenAnual"                 | Luciana Habert        | En proceso                        |
+| Implementación endpoint GET "resumenAnual"                        | Luciana Habert        | En proceso                        |
 | Añadir especificación endpoint GET "estadisticas"                 | Jonatan Agüero        | En proceso                        |
 | Implementación endpoint GET "estadisticas"                        | Jonatan Agüero        | En proceso                        |
 
