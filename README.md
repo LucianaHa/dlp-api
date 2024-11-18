@@ -50,8 +50,8 @@ los distintos módulos del proyecto.
 | Implementación endpoint GET "librosMasSolicitados"                | Alen Rupailaf         | -                                 |
 | Añadir especificación endpoint GET "librosPendientes"             | Mayra Carrillo        | -                                 |
 | Implementación endpoint GET "librosPendientes"                    | Mayra Carrillo        | En proceso                        |
-| Añadir especificación endpoint GET "resumenAnual"                 | Luciana Habert        | -                                 |
-| Implementación endpoint GET "resumenAnual"                        | Luciana Habert        | -                                 |
+| Añadir especificación endpoint GET "resumenAnual"                 | Luciana Habert        | En proceso                                 |
+| Implementación endpoint GET "resumenAnual"                        | Luciana Habert        | En proceso                                 |
 | Añadir especificación endpoint GET "estadisticas"                 | Jonatan Agüero        | En proceso                        |
 | Implementación endpoint GET "estadisticas"                        | Jonatan Agüero        | En proceso                        |
 
