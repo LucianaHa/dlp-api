@@ -40,7 +40,7 @@ export async function GET() {
         `;
 
         // Inicializa el resumen con valores en cero
-        const resumenAnual = Array(12).fill({ prestamos: 0, donaciones: 0 });
+        const resumenAnual = Array(12).fill({ total_prestados: 0, total_donados: 0 });
 
         // Asignar datos de préstamos al resumen
         prestamosQuery.rows.forEach(({ mes, año, total_prestamos }) => {
