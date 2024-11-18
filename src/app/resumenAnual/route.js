@@ -1,6 +1,6 @@
 import { sql } from '@vercel/postgres';
 
-export async function GET(request) {
+export async function GET() {
     const now = new Date(); // Fecha actual
     const mesActual = now.getMonth() + 1; // Obtiene el mes actual (0 = Enero, 11 = Diciembre, sumamos 1)
     const añoActual = now.getFullYear(); // Año actual
@@ -33,7 +33,7 @@ export async function GET(request) {
                 EXTRACT(MONTH FROM fecha_donacion) AS mes,
                 EXTRACT(YEAR FROM fecha_donacion) AS año,
                 COUNT(*) AS total_donaciones
-            FROM donacion
+            FROM libro
             WHERE fecha_donacion >= DATE_TRUNC('month', CURRENT_DATE) - INTERVAL '12 months'
             GROUP BY año, mes
             ORDER BY año, mes;
