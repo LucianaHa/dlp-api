@@ -111,6 +111,12 @@ los distintos módulos del proyecto.
 |**Parámetros**| id: identificador del registro a obtener, si no se especifica devuelve todos los registros |
 |**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"registros": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 1,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"usuario": "admin",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha": "2022-08-18T15:30:00.000Z",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"accion": "MODIFICAR_LIBRO",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"metadatos": "CAMBIAR_TITULO: { 'titulo_anterior': 'Moby Dcki'; 'titulo_nuevo': 'Moby Dick' }"<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}
 
+|**Servicio**| \<url-servidor\>/librosPendientes|
+|----------------------------------- | --- |
+|**Parámetros**| No recibe  |
+|**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"libros": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"prestamo_id": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id_libro": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha_limite": "2024-11-13T17:43:56.663Z",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha_devuelto": null,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"libro_id": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"prestado": true,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"borrado": false<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}
+|
+
 ### Especificación de endpoints (POST)
 |**Servicio**| \<url-servidor\>/donar| 
 |----------------------------------- | --- |
