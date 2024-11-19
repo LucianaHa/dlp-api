@@ -121,6 +121,10 @@ los distintos módulos del proyecto.
 |**Parámetros**| No recibe  |
 |**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"data": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_prestados": 4,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_donados": 1<br>&nbsp;&nbsp;&nbsp;&nbsp;},<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_prestados": 0,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_donados": 0<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>} |
 
+|**Servicio**| \<url-servidor\>/librosMasSolicitados|
+|----------------------------------- | --- |
+|**Parámetros**| No recibe  |
+|**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"data": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"titulo": "Rayuela",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"autores": "Julio Cortázar",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"caratula": "...",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tags": [<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"experimental",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"literatura latinoamericana"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"veces_prestado": "3"<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>} |
 
 ### Especificación de endpoints (POST)
 |**Servicio**| \<url-servidor\>/donar| 
