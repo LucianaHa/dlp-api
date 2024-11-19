@@ -44,13 +44,13 @@ los distintos módulos del proyecto.
 | Implementación endpoint GET "registros"                           | Luciana Habert        | Terminada                         |
 | Añadir especificación endpoint POST "registros"                   | Cristóbal Veas        | Terminada                         |
 | Implementación endpoint POST "registros"                          | Alen Rupailaf         | Terminada                         |
-| Añadir especificación endpoint POST "prestamoDevolucion"          | Cristóbal Veas        | En proceso                        |
+| Añadir especificación endpoint POST "prestamoDevolucion"          | Cristóbal Veas        | Terminada                         |
 | Implementación endpoint POST "prestamoDevolucion"                 | Cristóbal Veas        | Terminada                         |
 | Añadir especificación endpoint GET "librosMasSolicitados"         | Alen Rupailaf         | Terminada                         |
 | Implementación endpoint GET "librosMasSolicitados"                | Alen Rupailaf         | Terminada                         |
 | Añadir especificación endpoint GET "librosPendientes"             | Mayra Carrillo        | Terminada                         |
 | Implementación endpoint GET "librosPendientes"                    | Mayra Carrillo        | Terminada                         |
-| Añadir especificación endpoint GET "resumenAnual"                 | Luciana Habert        | En proceso                        |
+| Añadir especificación endpoint GET "resumenAnual"                 | Luciana Habert        | Terminada                         |
 | Implementación endpoint GET "resumenAnual"                        | Luciana Habert        | Terminada                         |
 | Añadir especificación endpoint GET "estadisticas"                 | Jonatan Agüero        | En proceso                        |
 | Implementación endpoint GET "estadisticas"                        | Jonatan Agüero        | En proceso                        |
@@ -136,3 +136,8 @@ los distintos módulos del proyecto.
 |----------------------------------- | --- |
 |**Body** | {<br>&nbsp;&nbsp;"usuario": "mayra.carrillo@alumnos.uach.cl",<br>&nbsp;&nbsp;"accion": "MODIFICAR_LIBRO",<br>&nbsp;&nbsp;"metadatos": "CAMBIAR_TITULO: { 'titulo_anterior': 'Moby Dcki'; 'titulo_nuevo': 'Moby Dick' }"<br>}|
 |**Ejemplo respuesta**|{<br>&nbsp;&nbsp;"id": 1<br>} |
+
+|**Servicio**| \<url-servidor\>/prestamoDevolucion| 
+|----------------------------------- | --- |
+|**Body** | {<br>&nbsp;&nbsp;"data": {<br>&nbsp;&nbsp;&nbsp;&nbsp;"id_libro": 4,<br>&nbsp;&nbsp;&nbsp;&nbsp;"usuario": "cristobal.veas@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;"accion": "PRESTAMO"<br>&nbsp;&nbsp;}<br>} |
+|**Ejemplo respuesta**| No devuelve |
