@@ -54,10 +54,10 @@ los distintos módulos del proyecto.
 | Implementación endpoint GET "resumenAnual"                        | Luciana Habert        | Terminada                         |
 | Añadir especificación endpoint GET "estadisticas"                 | Jonatan Agüero        | Terminada                         |
 | Implementación endpoint GET "estadisticas"                        | Jonatan Agüero        | Terminada                         |
-| Implementación endpoint UPDATE "modificarLibros"                  | Cristóbal Veas        | En Proceso                        |
-| Implementación endpoint UPDATE "modificarPrestamos"               | Alen Rupailaf         | En Proceso                        |
-| Añadir especificación endpoint UPDATE "modificarLibros"           |                       |                                   |
-| Añadir especificación endpoint UPDATE "modificarPrestamos"        |                       |                                   |
+| Implementación endpoint PUT "modificarLibros"                     | Cristóbal Veas        | En Proceso                        |
+| Implementación endpoint PUT "modificarPrestamos"                  | Alen Rupailaf         | En Proceso                        |
+| Añadir especificación endpoint PUT "modificarLibros"              |                       |                                   |
+| Añadir especificación endpoint PUT "modificarPrestamos"           |                       |                                   |
 
 ### Especificación de tablas de base de datos
 
