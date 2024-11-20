@@ -58,6 +58,7 @@ los distintos módulos del proyecto.
 | Implementación endpoint UPDATE "modificarPrestamo"                | Cristóbal Veas        | En Proceso                        |
 | Añadir especificación endpoint UPDATE "modificarLibros"           |                       |                                   |
 | Añadir especificación endpoint UPDATE "modificarPrestamo"         |                       |                                   |
+
 ### Especificación de tablas de base de datos
 
 #### Libro
@@ -122,7 +123,7 @@ los distintos módulos del proyecto.
 |**Servicio**| \<url-servidor\>/stats|
 |----------------------------------- | --- |
 |**Parámetros**| No recibe  |
-|**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"stats":[<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_libros": 66,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_prestados": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_donantes": 23,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"top_lectores": ["sebastian.cardenas@alumnos.uach.cl", "alen.rupailaf@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "benjamin.parra@alumnos.uach.cl"],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"top_donantes":["mayra.carrillo@alumnos.uach.cl", "jason.cardenas@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "benjamin.parra@alumnos.uach.cl"],<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}
+|**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"stats":&nbsp;[<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_libros": 66,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_prestados": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_donantes": 23,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"top_lectores": ["sebastian.cardenas@alumnos.uach.cl", "alen.rupailaf@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "benjamin.parra@alumnos.uach.cl"],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"top_donantes":["mayra.carrillo@alumnos.uach.cl", "jason.cardenas@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "benjamin.parra@alumnos.uach.cl"],<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}
 
 
 |**Servicio**| \<url-servidor\>/resumenAnual|
