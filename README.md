@@ -55,9 +55,9 @@ los distintos módulos del proyecto.
 | Añadir especificación endpoint GET "estadisticas"                 | Jonatan Agüero        | Terminada                         |
 | Implementación endpoint GET "estadisticas"                        | Jonatan Agüero        | Terminada                         |
 | Implementación endpoint UPDATE "modificarLibros"                  | Cristóbal Veas        | En Proceso                        |
-| Implementación endpoint UPDATE "modificarPrestamo"                | Cristóbal Veas        | En Proceso                        |
+| Implementación endpoint UPDATE "modificarPrestamos"               | Alen Rupailaf         | En Proceso                        |
 | Añadir especificación endpoint UPDATE "modificarLibros"           |                       |                                   |
-| Añadir especificación endpoint UPDATE "modificarPrestamo"         |                       |                                   |
+| Añadir especificación endpoint UPDATE "modificarPrestamos"        |                       |                                   |
 
 ### Especificación de tablas de base de datos
 
@@ -120,10 +120,10 @@ los distintos módulos del proyecto.
 |**Parámetros**| No recibe  |
 |**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"libros": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"prestamo_id": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id_libro": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha_limite": "2024-11-13T17:43:56.663Z",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha_devuelto": null,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"libro_id": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"prestado": true,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"borrado": false<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}
 
-|**Servicio**| \<url-servidor\>/stats|
+|**Servicio**| \<url-servidor\>/estadisticas|
 |----------------------------------- | --- |
 |**Parámetros**| No recibe  |
-|**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"stats":&nbsp;[<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_libros": 66,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_prestados": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_donantes": 23,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"top_lectores": ["sebastian.cardenas@alumnos.uach.cl", "alen.rupailaf@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "benjamin.parra@alumnos.uach.cl"],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"top_donantes":["mayra.carrillo@alumnos.uach.cl", "jason.cardenas@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "benjamin.parra@alumnos.uach.cl"],<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}
+|**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"data":&nbsp;[<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_libros": 66,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_prestados": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_donantes": 23,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"top_lectores": [<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"sebastian.cardenas@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"alen.rupailaf@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"benjamin.parra@alumnos.uach.cl"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"top_donantes":&nbsp;[<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"mayra.carrillo@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"jason.cardenas@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"benjamin.parra@alumnos.uach.cl"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}
 
 
 |**Servicio**| \<url-servidor\>/resumenAnual|

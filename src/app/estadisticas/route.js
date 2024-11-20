@@ -29,7 +29,7 @@ export async function GET() {
             top_donadores: top_donadores.rows.map(row => row.donante),
         };
 
-        return new Response(JSON.stringify(stats), {
+        return new Response(JSON.stringify({ data: stats }), {
             status: 200,
             headers: { 'Content-Type': 'application/json' },
         });
