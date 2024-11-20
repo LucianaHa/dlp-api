@@ -116,6 +116,12 @@ los distintos módulos del proyecto.
 |**Parámetros**| No recibe  |
 |**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"libros": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"prestamo_id": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id_libro": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha_limite": "2024-11-13T17:43:56.663Z",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha_devuelto": null,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"libro_id": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"prestado": true,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"borrado": false<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}
 
+|**Servicio**| \<url-servidor\>/stats|
+|----------------------------------- | --- |
+|**Parámetros**| No recibe  |
+|**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"stats":[<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_libros": 66,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_prestados": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_donantes": 23,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"top_lectores": ["mayra.carrillo@alumnos.uach.cl", "alen.rupailaf@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "benjamin.parra@alumnos.uach.cl"],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"top_donantes":["mayra.carrillo@alumnos.uach.cl", "jason.cardenas@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "benjamin.parra@alumnos.uach.cl"],<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}
+
+
 |**Servicio**| \<url-servidor\>/resumenAnual|
 |----------------------------------- | --- |
 |**Parámetros**| No recibe  |
