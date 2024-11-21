@@ -58,6 +58,7 @@ los distintos módulos del proyecto.
 | Implementación endpoint PUT "modificarPrestamos"                  | Alen Rupailaf         | En Proceso                        |
 | Añadir especificación endpoint PUT "modificarLibros"              |                       |                                   |
 | Añadir especificación endpoint PUT "modificarPrestamos"           |                       |                                   |
+| Subir a la oficial base de datos los libros                       | Todo el equipo        |                                   |
 
 ### Especificación de tablas de base de datos
 
