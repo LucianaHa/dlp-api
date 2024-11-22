@@ -150,7 +150,7 @@ los distintos módulos del proyecto.
 
 |**Servicio**| https://dlp-api.vercel.app/prestamoDevolucion | 
 |----------------------------------- | --- |
-|**Body** | {<br>&nbsp;&nbsp;"data": {<br>&nbsp;&nbsp;&nbsp;&nbsp;"id_libro": 4,<br>&nbsp;&nbsp;&nbsp;&nbsp;"usuario": "cristobal.veas@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;"accion": "PRESTAMO"<br>&nbsp;&nbsp;}<br>} |
+|**Body** | {<br>&nbsp;&nbsp;"id_libro": 4,<br>&nbsp;&nbsp;"usuario": "cristobal.veas@alumnos.uach.cl",<br>&nbsp;&nbsp;"accion": "PRESTAMO"<br>} |
 |**Ejemplo respuesta**| No devuelve |
 
 ### Especificación de endpoints (PUT - Modificar datos)
