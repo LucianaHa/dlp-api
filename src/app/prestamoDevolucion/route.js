@@ -9,9 +9,7 @@ export async function POST(request) {
             try {
                 prestamo(info.id_libro, info.usuario);
 
-                return new Response(null, {
-                    status: 204
-                });
+                return new Response(null, { status: 204 });
             } catch (e) {
                 console.log(e);
                 return new Response(JSON.stringify({ error: "Error al crear el préstamo." }), {

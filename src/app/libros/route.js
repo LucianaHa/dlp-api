@@ -71,3 +71,29 @@ export async function GET(request) {
         });
     }
 }
+
+export async function PUT(request) {
+    const libro = await request.json();
+    try {
+        await sql`
+                UPDATE libro
+                SET titulo = COALESCE(${libro.titulo}, titulo),
+                    autores = COALESCE(${libro.autores}, autores),
+                    caratula = COALESCE(${libro.caratula}, caratula),
+                    isbn = COALESCE(${libro.isbn}, isbn),
+                    tags = COALESCE(${libro.tags}, tags),
+                    donante = COALESCE(${libro.donante}, donante),
+                    fecha_donacion = COALESCE(${libro.fecha_donacion}, fecha_donacion),
+                    prestado = COALESCE(${libro.prestado}, prestado)
+                WHERE id = ${libro.id};
+        `;
+
+        return new Response(null, { status: 204 });
+    } catch (e) {
+        console.log(e);
+        return new Response(JSON.stringify({ error: "Error al modificar el libro." }), {
+            status: 500,
+            headers: { 'Content-Type': 'application/json' },
+        });
+    }
+}
