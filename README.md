@@ -54,10 +54,10 @@ los distintos módulos del proyecto.
 | Implementación endpoint GET "resumenAnual"                        | Luciana Habert        | Terminada                         |
 | Añadir especificación endpoint GET "estadisticas"                 | Jonatan Agüero        | Terminada                         |
 | Implementación endpoint GET "estadisticas"                        | Jonatan Agüero        | Terminada                         |
-| Implementación endpoint PUT "modificarLibros"                     | Cristóbal Veas        | En Proceso                        |
-| Implementación endpoint PUT "modificarPrestamos"                  | Alen Rupailaf         | En Proceso                        |
-| Añadir especificación endpoint PUT "modificarLibros"              |                       |                                   |
-| Añadir especificación endpoint PUT "modificarPrestamos"           |                       |                                   |
+| Implementación endpoint PUT "libros"                              | Cristóbal Veas        | Terminada                         |
+| Implementación endpoint PUT "prestamos"                           | Alen Rupailaf         | En Proceso                        |
+| Añadir especificación endpoint PUT "libros"                       | Cristóbal Veas        | Terminada                         |
+| Añadir especificación endpoint PUT "prestamos"                    |                       |                                   |
 | Subir a la oficial base de datos los libros donados               | Todo el equipo        | En Proceso                        |
 
 ### Especificación de tablas de base de datos
@@ -116,39 +116,46 @@ los distintos módulos del proyecto.
 |**Parámetros**| id: identificador del registro a obtener, si no se especifica devuelve todos los registros |
 |**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"registros": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id": 1,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"usuario": "admin",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha": "2022-08-18T15:30:00.000Z",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"accion": "MODIFICAR_LIBRO",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"metadatos": "CAMBIAR_TITULO: { 'titulo_anterior': 'Moby Dcki'; 'titulo_nuevo': 'Moby Dick' }"<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}
 
-|**Servicio**| \<url-servidor\>/librosPendientes|
+|**Servicio**| \<url-servidor\>/librosPendientes |
 |----------------------------------- | --- |
 |**Parámetros**| No recibe  |
 |**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"libros": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"prestamo_id": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"id_libro": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha_limite": "2024-11-13T17:43:56.663Z",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fecha_devuelto": null,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"libro_id": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"prestado": true,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"borrado": false<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}
 
-|**Servicio**| \<url-servidor\>/estadisticas|
+|**Servicio**| \<url-servidor\>/estadisticas |
 |----------------------------------- | --- |
 |**Parámetros**| No recibe  |
 |**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"data":&nbsp;[<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_libros": 66,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_prestados": 2,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_donantes": 23,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"top_lectores": [<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"sebastian.cardenas@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"alen.rupailaf@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"benjamin.parra@alumnos.uach.cl"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"top_donantes":&nbsp;[<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"mayra.carrillo@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"jason.cardenas@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"benjamin.parra@alumnos.uach.cl"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>}
 
-
-|**Servicio**| \<url-servidor\>/resumenAnual|
+|**Servicio**| \<url-servidor\>/resumenAnual |
 |----------------------------------- | --- |
 |**Parámetros**| No recibe  |
 |**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"data": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_prestados": 4,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_donados": 1<br>&nbsp;&nbsp;&nbsp;&nbsp;},<br>&nbsp;&nbsp;&nbsp;&nbsp;...<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_prestados": 0,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"total_donados": 0<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>} |
 
-|**Servicio**| \<url-servidor\>/librosMasSolicitados|
+|**Servicio**| \<url-servidor\>/librosMasSolicitados |
 |----------------------------------- | --- |
 |**Parámetros**| No recibe  |
 |**Ejemplo respuesta**| {<br>&nbsp;&nbsp;"data": [<br>&nbsp;&nbsp;&nbsp;&nbsp;{<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"titulo": "Rayuela",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"autores": "Julio Cortázar",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"caratula": "...",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"tags": [<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"experimental",<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"literatura latinoamericana"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;],<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"veces_prestado": "3"<br>&nbsp;&nbsp;&nbsp;&nbsp;}<br>&nbsp;&nbsp;]<br>} |
 
 ### Especificación de endpoints (POST)
-|**Servicio**| \<url-servidor\>/donar| 
+
+|**Servicio**| \<url-servidor\>/donar | 
 |----------------------------------- | --- |
 |**Body** | {<br>&nbsp;&nbsp;"titulo": "Moby Dick",<br>&nbsp;&nbsp;"autores": "Herman Melville",<br>&nbsp;&nbsp;"caratula": "...",<br>&nbsp;&nbsp;"isbn": "9788491054290",<br>&nbsp;&nbsp;"tags": [<br>&nbsp;&nbsp;&nbsp;&nbsp;"aventura",<br>&nbsp;&nbsp;&nbsp;&nbsp;"épica",<br>&nbsp;&nbsp;&nbsp;&nbsp;"clásico"<br>&nbsp;&nbsp;],<br>&nbsp;&nbsp;"donante": "mayra.carrillo@alumnos.uach.cl"<br>} |
 |**Ejemplo respuesta**|{<br>&nbsp;&nbsp;"id": 5<br>} |
 
-|**Servicio**| \<url-servidor\>/registros| 
+|**Servicio**| \<url-servidor\>/registros | 
 |----------------------------------- | --- |
 |**Body** | {<br>&nbsp;&nbsp;"usuario": "mayra.carrillo@alumnos.uach.cl",<br>&nbsp;&nbsp;"accion": "MODIFICAR_LIBRO",<br>&nbsp;&nbsp;"metadatos": "CAMBIAR_TITULO: { 'titulo_anterior': 'Moby Dcki'; 'titulo_nuevo': 'Moby Dick' }"<br>}|
 |**Ejemplo respuesta**|{<br>&nbsp;&nbsp;"id": 1<br>} |
 
-|**Servicio**| \<url-servidor\>/prestamoDevolucion| 
+|**Servicio**| \<url-servidor\>/prestamoDevolucion | 
 |----------------------------------- | --- |
 |**Body** | {<br>&nbsp;&nbsp;"data": {<br>&nbsp;&nbsp;&nbsp;&nbsp;"id_libro": 4,<br>&nbsp;&nbsp;&nbsp;&nbsp;"usuario": "cristobal.veas@alumnos.uach.cl",<br>&nbsp;&nbsp;&nbsp;&nbsp;"accion": "PRESTAMO"<br>&nbsp;&nbsp;}<br>} |
+|**Ejemplo respuesta**| No devuelve |
+
+### Especificación de endpoints (PUT)
+
+|**Servicio**| \<url-servidor\>/libros | 
+|----------------------------------- | --- |
+|**Body** | {<br>&nbsp;&nbsp;"id": 3,<br>&nbsp;&nbsp;"titulo": "El Principito",<br>&nbsp;&nbsp;// Los campos no especificados o comentados, no se modificarán.<br>&nbsp;&nbsp;// "autores": "...",<br>&nbsp;&nbsp;// "caratula": "...",<br>&nbsp;&nbsp;"isbn": "9780156012195",<br>&nbsp;&nbsp;"tags": [<br>&nbsp;&nbsp;&nbsp;&nbsp;"infantil",<br>&nbsp;&nbsp;&nbsp;&nbsp;"filosofía"<br>&nbsp;&nbsp;],<br>&nbsp;&nbsp;// "donante": "...",<br>&nbsp;&nbsp;// "fecha_donacion": "...",<br>&nbsp;&nbsp;"prestado": false<br>} |
 |**Ejemplo respuesta**| No devuelve |
