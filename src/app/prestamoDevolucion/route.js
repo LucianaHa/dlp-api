@@ -68,10 +68,16 @@ async function prestamo(idLibro, usuario) {
         VALUES 
             (
             ${idLibro}, 
-            ${usuario}, 
+            COALESCE(${usuario}, 'Desconocido'), 
             NOW()::timestamp,
             (NOW()::timestamp + INTERVAL '2 weeks')
-            ) 
+            );
+    `;
+
+    await sql`
+        UPDATE libro
+        SET prestado = true
+        WHERE id = ${idLibro};
     `;
 }
 
@@ -87,28 +93,28 @@ async function devolucion(idLibro, usuario) {
 
     if (!rows[0].prestado) { 
         await sql`
-        INSERT INTO prestamo
-            (
-            id_libro, 
-            usuario,
-            fecha_prestamo,
-            fecha_limite,
-            fecha_devuelto
-            )
-        VALUES 
-            (
-            ${idLibro}, 
-            ${usuario}, 
-            NOW()::timestamp,
-            NOW()::timestamp,
-            NOW()::timestamp
-            ) 
+            INSERT INTO prestamo
+                (
+                id_libro, 
+                usuario,
+                fecha_prestamo,
+                fecha_limite,
+                fecha_devuelto
+                )
+            VALUES 
+                (
+                ${idLibro}, 
+                COALESCE(${usuario}, 'Desconocido'), 
+                NOW()::timestamp,
+                NOW()::timestamp,
+                NOW()::timestamp
+                );
         `;
     }
 
     await sql`
-            UPDATE prestamo 
-            SET fecha_devuelto = NOW()::timestamp
-            WHERE id_libro = ${idLibro} AND borrado = FALSE;
+        UPDATE prestamo 
+        SET fecha_devuelto = NOW()::timestamp
+        WHERE id_libro = ${idLibro} AND borrado = FALSE;
     `;
 }
