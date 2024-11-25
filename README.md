@@ -159,3 +159,8 @@ los distintos módulos del proyecto.
 |----------------------------------- | --- |
 |**Body** | {<br>&nbsp;&nbsp;"id": 3,<br>&nbsp;&nbsp;"titulo": "El Principito",<br>&nbsp;&nbsp;// Los campos no especificados o comentados, no se modificarán.<br>&nbsp;&nbsp;// "autores": "...",<br>&nbsp;&nbsp;// "caratula": "...",<br>&nbsp;&nbsp;"isbn": "9780156012195",<br>&nbsp;&nbsp;"tags": [<br>&nbsp;&nbsp;&nbsp;&nbsp;"infantil",<br>&nbsp;&nbsp;&nbsp;&nbsp;"filosofía"<br>&nbsp;&nbsp;],<br>&nbsp;&nbsp;// "donante": "...",<br>&nbsp;&nbsp;// "fecha_donacion": "...",<br>&nbsp;&nbsp;"prestado": false<br>} |
 |**Ejemplo respuesta**| No devuelve |
+
+|**Servicio**| https://dlp-api.vercel.app/prestamos | 
+|----------------------------------- | --- |
+|**Body** | {<br>&nbsp;&nbsp;"usuario": "mayra.carrillo@alumnos.uach.cl",<br>&nbsp;&nbsp;"fecha_prestamo": "2022-08-05T17:20:00.000Z",<br>&nbsp;&nbsp;// Los campos no especificados o comentados, no se modificarán.<br>&nbsp;&nbsp;// "fecha_devuelto": "2022-08-18T15:30:00.000Z",<br>&nbsp;&nbsp;"fecha_limite": "2022-08-19T17:20:00.000Z"<br>} |
+|**Ejemplo respuesta**| No devuelve |

@@ -65,3 +65,25 @@ export async function GET(request) {
         });
     }
 }
+
+export async function PUT(request) {
+    const prestamo = await request.json();
+    try {
+        const { rows } = await sql`
+            UPDATE prestamo 
+            SET usuario = COALESCE(${prestamo.usuario}, usuario),
+                fecha_prestamo = COALESCE(${prestamo.fecha_prestamo}, fecha_prestamo),
+                fecha_devuelto = COALESCE(${prestamo.fecha_devuelto}, fecha_devuelto),
+                fecha_limite = COALESCE(${prestamo.fecha_limite}, fecha_limite)
+            WHERE id = ${prestamo.id};
+        `;
+
+        return new Response(null, { status: 204 });
+    } catch (e) {
+        console.log(e);
+        return new Response(JSON.stringify({ error: "Error al modificar prestamo." }), {
+            status: 500,
+            headers: { 'Content-Type': 'application/json' },
+        });
+    }
+}
