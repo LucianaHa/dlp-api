@@ -55,7 +55,7 @@ los distintos módulos del proyecto.
 | Añadir especificación endpoint GET "estadisticas"                 | Jonatan Agüero        | Terminada                         |
 | Implementación endpoint GET "estadisticas"                        | Jonatan Agüero        | Terminada                         |
 | Implementación endpoint PUT "libros"                              | Cristóbal Veas        | Terminada                         |
-| Implementación endpoint PUT "prestamos"                           | Alen Rupailaf         | En Proceso                        |
+| Implementación endpoint PUT "prestamos"                           | Alen Rupailaf         | Terminada                         |
 | Añadir especificación endpoint PUT "libros"                       | Cristóbal Veas        | Terminada                         |
 | Añadir especificación endpoint PUT "prestamos"                    |                       |                                   |
 | Subir a la oficial base de datos los libros donados               | Todo el equipo        | En Proceso                        |
