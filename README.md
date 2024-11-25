@@ -57,7 +57,7 @@ los distintos módulos del proyecto.
 | Implementación endpoint PUT "libros"                              | Cristóbal Veas        | Terminada                         |
 | Implementación endpoint PUT "prestamos"                           | Alen Rupailaf         | Terminada                         |
 | Añadir especificación endpoint PUT "libros"                       | Cristóbal Veas        | Terminada                         |
-| Añadir especificación endpoint PUT "prestamos"                    |                       |                                   |
+| Añadir especificación endpoint PUT "prestamos"                    | Alen Rupailaf         | Terminada                         |
 | Subir a la oficial base de datos los libros donados               | Todo el equipo        | En Proceso                        |
 
 ### Especificación de tablas de base de datos
